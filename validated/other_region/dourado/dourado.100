@@ -1,0 +1,245 @@
+Dourados   MS
+*** Climate parameters
+14.27             PRECIP(1) #mean precipitation for january 
+14.57             PRECIP(2) 
+10.47             PRECIP(3) 
+8.61              PRECIP(4) 
+8.74              PRECIP(5) 
+5.50              PRECIP(6) 
+2.92              PRECIP(7) 
+4.15              PRECIP(8) 
+7.24              PRECIP(9) 
+10.06             PRECIP(10)
+12.16             PRECIP(11)
+13.64             PRECIP(12)
+0.75              PRCSTD(1) #standard deviation for january precipitation 
+0.76              PRCSTD(2) 
+0.71              PRCSTD(3) 
+0.71              PRCSTD(4) 
+0.81              PRCSTD(5) 
+0.62              PRCSTD(6) 
+0.41              PRCSTD(7) 
+0.59              PRCSTD(8) 
+0.75              PRCSTD(9) 
+0.73              PRCSTD(10)
+0.84              PRCSTD(11)
+0.85              PRCSTD(12)
+1.68              PRCSKW(1) # distortion compared with the mean (SKEW in excel?)
+2.18              PRCSKW(2) 
+4.51              PRCSKW(3) 
+2.67              PRCSKW(4) 
+2.93              PRCSKW(5) 
+3.91              PRCSKW(6) 
+4.46              PRCSKW(7) 
+5.90              PRCSKW(8) 
+3.92              PRCSKW(9) 
+2.39              PRCSKW(10)
+2.42              PRCSKW(11)
+2.20              PRCSKW(12)
+21.56             TMN2M(1) #average minimum temperature for january  
+20.95             TMN2M(2)  
+20.36             TMN2M(3)  
+18.39             TMN2M(4)  
+14.20             TMN2M(5)  
+12.88             TMN2M(6)  
+11.83             TMN2M(7)  
+13.72             TMN2M(8)  
+16.03             TMN2M(9)  
+18.99             TMN2M(10) 
+19.73             TMN2M(11) 
+21.06             TMN2M(12) 
+31.66             TMX2M(1) #average maximum temperature for january  
+31.15             TMX2M(2)  
+30.98             TMX2M(3)  
+29.85             TMX2M(4)  
+26.38             TMX2M(5)  
+25.67             TMX2M(6)  
+26.23             TMX2M(7)  
+29.57             TMX2M(8)  
+31.41             TMX2M(9)  
+32.58             TMX2M(10) 
+32.31             TMX2M(11) 
+32.05             TMX2M(12) 
+*** Site and control parameters
+0.0            IVAUTO #0  initial soil C and N levels are specified in the <site>.100 file      
+1.0            NELEM # 1 to simulate C and N only      
+-22.23        SITLAT #plant geographic location
+-54.81         SITLNG #plant geographic location
+408.0          ELEV #elevation
+0.0            SITSLP #site slope
+0.0            ASPECT #site aspect
+0.0            EHORIZ #site east horizon
+0.0            WHORIZ #site west horizon  
+9.             NLAYER #Number of soil layers in water model (maximum of 9)      
+6.             NLAYPG #Number of soil layers in the top level of the water model      
+1.00           DRAIN #The fraction of excess water lost by drainage; indicates whether a soil is sensitive for anaerobiosis (drain=0) or not (drain=1)      
+0.2            BASEF #Fraction of the soil water content of layer nlayer + 1 which is lost via base flow       
+0.80000        STORMF #This parameter is not used by DayCent since the runoff calculation (infiltration excess) replaces the stormflow calculation used by monthly Century. 
+8.00000        PRECRO #Amount of monthly rainfall required in order for runoff to occur    
+0.15000        FRACRO #Fraction of the monthly rainfall, over PRECRO, which is lost via runoff.    
+0.00000        SWFLAG #always 0 in DayCent (values of field capacity and permanent wilting point are present in soils
+1.             PSLSRB #Slope term which controls the fraction of mineral P that is labile      
+20.            SORPMX #Maximum P sorption potential for a soil   
+ 1.0           SUBLIM #Multiplier on sublimation
+ 0.18          REFLEC #vegetation reflectivity/albedo
+ 0.65          ALBEDO #snow albedo
+ 8.0E-6        DMPFLX #Dampens strong fluxes of water between soil layers
+-200.0         HPOTD #hydraulic water potential of deep storage layer
+ 3.0E-4        KSATD #saturated hydraulic conductivity of deep storage layer
+ 0.0           TBMIN #minimum temperature for bottom soil layer
+ 12.4          TBMAX #maximum temperature for bottom soil layer
+ 0.003         DMPFCT #damping factor for calculating soil temperature by layer
+ 30.           TIMLAG #days from Jan 1 to coolest temp at bottom of soil (days)
+ 0.03          NCOEFF #minimum water/temperature limitation coefficient for nitrify
+ 0.0           DNSTRT #turn off respiration restraint on denitrification starting on this day days
+ 0.0           DNEND #turn off respiration restraint on denitrification ends on this day
+ 0.012         NADJFC #maximum proportion of nitrified N lost as N2O @ field capacity
+ 0.012         NADJWP #minimum proportion of nitrified N lost as N2O @ wilting point
+ 1.0           MAXNIT #maximum daily nitrification amount
+ 0.2           MINO3 #fraction of new net mineralization that goes to NO3 (0.0-1.0)
+ 1.0           WFPSNIP #adjustment on inflection point for the water filled pore space effect on denitrification curve
+ 1.0           N2N2OA #N2/N2O ratio adjustment factor for computing the N2/N2O ratio during non-flooded conditions.
+*** External nutrient input parameters
+0.26              EPNFA(1) #Intercept value for determining the effect of annual precipitation on atmospheric N fixation (wet and dry deposition)
+0.0               EPNFA(2) #Slope values for determining the effect of annual precipitation on atmospheric N fixation (wet and dry deposition) 
+30.0000           EPNFS(1) #Intercept value for determining the effect of annual precipitation on non-symbiotic soil N fixation; not used if fix.100 value nsnfix = 1   
+0.01000           EPNFS(2) #Slope value for determining the effect of annual precipitation on non-symbiotic soil N fixation; not used if fix.100 value nsnfix = 1   
+0.0               SATMOS(1) #Intercept value for atmospheric S inputs as a linear function of annual precipitation   
+0.0               SATMOS(2) #Slope value for atmospheric S inputs as a linear function of annual precipitation  
+0.0               SIRRI #S concentration in irrigation water    
+0.5               AFUE #DayCent default
+*** Organic matter initial values
+21.79             SOM1CI(1,1) #unlabeled C in active surface organic matter pool
+0.00000           SOM1CI(1,2) #labeled C in active surface organic matter pool
+174.17            SOM1CI(2,1) #unlabeled C in active soil organic matter pool
+0.00000           SOM1CI(2,2) #labeled C in active soil organic matter pool
+3728.41           SOM2CI(1,1) #unlabeled C in slow surface organic matter pool
+0.00000           SOM2CI(1,2) #labeled C in slow surface organic matter pool 
+0.00              SOM2CI(2,1) #unlabeled C in slow soil organic matter pool
+0.00000           SOM2CI(2,2) #labeled C in slow soil organic matter pool
+1803.39           SOM3CI(1) #unlabeled C in passive soil organic matter pool 
+0.00000           SOM3CI(2) #labeled C in passive soil organic matter pool 
+34.70             RCES1(1,1) #Initial C/N ratio for surface som1
+130               RCES1(1,2) #Initial C/P ratio for surface som1
+150               RCES1(1,3) #Initial C/S ratio for surface som1
+12.08             RCES1(2,1) #Initial C/N ratio for soil som1
+130               RCES1(2,2) #Initial C/P ratio for soil som1
+150               RCES1(2,3) #Initial C/S ratio for soil som1
+117.00            RCES2(1,1) #Initial C/N ratio for surface som2
+230               RCES2(1,2) #Initial C/P ratio for surface som2
+9000              RCES2(1,3) #Initial C/S ratio for surface som2
+30                RCES2(2,1) #Initial C/N ratio for soil som2
+230               RCES2(2,2) #Initial C/P ratio for soil som2
+9000              RCES2(2,3) #Initial C/S ratio for soil som2
+60.69             RCES3(1) #Initial C/N ratio for som3  
+100               RCES3(2) #Initial C/P ratio for som3  
+9000              RCES3(3) #Initial C/S ratio for som3  
+78.09             CLITTR(1,1) #Initial surface litter pool UNLABL Structural + Metabolic
+0.00000           CLITTR(1,2) #Initial surface litter pool LABELD
+500.00            CLITTR(2,1) #Initial soil litter pool UNLABL Structural + Metabolic
+0.00              CLITTR(2,2) #Initial soil litter pool LABELD Structural + Metabolic
+208.20            RCELIT(1,1) #Initial C/N ratio of surface litter Structural + Metabolic
+475               RCELIT(1,2) #Initial C/P ratio of surface litter Structural + Metabolic
+100               RCELIT(1,3) #Initial C/S ratio of surface litter Structural + Metabolic
+208.20            RCELIT(2,1) #Initial C/N ratio of soil litter Structural + Metabolic
+300               RCELIT(2,2) #Initial C/P ratio of soil litter Structural + Metabolic
+300               RCELIT(2,3) #Initial C/S ratio of soil litter Structural + Metabolic
+180.00000         AGLCIS(1) #Initial value of the above ground live C pool for crops/grasses (UNLABL)
+0.00000           AGLCIS(2) #Initial value of the above ground live C pool for crops/grasses (LABELD)
+1.81000           AGLIVE(1) #Initial value of the above ground live N pool for crops/grasses
+0.00000           AGLIVE(2) #Initial value of the above ground live P pool for crops/grasses
+0.00000           AGLIVE(3) #Initial value of the below ground live C pool for crops/grasses 
+310.000           BGLCIS(1) #Initial value of the below ground live C pool for crops/grasses (UNLABL) 
+0.00000           BGLCIS(2) #Initial value of the below ground live C pool for crops/grasses (LABELD)
+3.10000           BGLIVE(1) #Initial value of the below ground live P pool for crops/grasses 
+0.00000           BGLIVE(2) #Initial value of the below ground live S pool for crops/grasses 
+0.00000           BGLIVE(3) #Initial value of the below ground live P pool for crops/grasses
+70.000            STDCIS(1) #Initial value of the standing dead C pool for crops/grasses (UNLABL) 
+0.00000           STDCIS(2) #Initial value of the standing dead C pool for crops/grasses (LABELD) 
+1.41000           STDEDE(1) #initial value of the standing dead N pool for crops/grasses 
+0.00000           STDEDE(2) #Initial value of the standing dead P pool for crops/grasses 
+0.00000           STDEDE(3) #Initial value of the standing dead S pool for crops/grasses 
+*** Forest organic matter initial parameters #from ado (ra00.100)
+1030              RLVCIS(1) #Initial value of the live leaf C pool for trees/shrubs (UNLABL) 
+0.00000           RLVCIS(2) #Initial value of the live leaf C pool for trees/shrubs (LABELD) 
+68.7              RLEAVE(1) #Initial value of the live leaf N pool for trees/shrubs 
+0                 RLEAVE(2) #Initial value of the live leaf P pool for trees/shrubs 
+0                 RLEAVE(3) #Initial value of the live leaf S pool for trees/shrubs 
+1373              FBRCIS(1) #Initial value of the live fine branch C pool for trees/shrubs (UNLABL) 
+0.00000           FBRCIS(2) #Initial value of the live fine branch C pool for trees/shrubs (LABELD)
+42.6              FBRCHE(1) #Initial value of the live fine branch N pool for trees/shrubs
+0                 FBRCHE(2) #Initial value of the live fine branch P pool for trees/shrubs 
+0                 FBRCHE(3) #Initial value of the live fine branch S pool for trees/shrubs 
+8800              RLWCIS(1) #Initial value of the live large wood C pool for trees/shrubs (UNLABL) 
+0.00000           RLWCIS(2) #Initial value of the live large wood C pool for trees/shrubs (LABELD) 
+58.7              RLWODE(1) #Initial value of the live large wood N pool for trees/shrubs 
+0                 RLWODE(2) #Initial value of the live large wood P pool for trees/shrubs 
+0                 RLWODE(3) #Initial value of the live large wood S pool for trees/shrubs 
+1373              FRTCIS(1) #Initial value of the live fine root C pool for trees/shrubs (UNLABL) 
+0.00000           FRTCIS(2) #Initial value of the live fine root C pool for trees/shrubs (LABELD) 
+68.6              FROOTE(1) #Initial value of the live fine root N pool for trees/shrubs
+0                 FROOTE(2) #Initial value of the live fine root P pool for trees/shrubs 
+0                 FROOTE(3) #Initial value of the live fine root S pool for trees/shrubs
+1030              CRTCIS(1) #Initial value of the live coarse root C pool for trees/shrubs (UNLABL) 
+0.00000           CRTCIS(2) #Initial value of the live coarse root C pool for trees/shrubs (LABELD)
+20.6              CROOTE(1) #Initial value of the live coarse root N pool for trees/shrubs 
+0                 CROOTE(2) #Initial value of the live coarse root P pool for trees/shrubs 
+0                 CROOTE(3) #Initial value of the live coarse root S pool for trees/shrubs 
+2395              WD1CIS(1) #Initial value of the dead fine branch C pool for trees/shrubs (UNLABL) 
+0.00000           WD1CIS(2) #Initial value of the dead fine branch C pool for trees/shrubs (LABELD) 
+9565              WD2CIS(1) #Initial value of the dead large wood C pool for trees/shrubs (UNLABL) 
+0.00000           WD2CIS(2) #Initial value of the dead large wood C pool for trees/shrubs (LABELD) 
+925               WD3CIS(1) #Initial value of the dead coarse root C pool for trees/shrubs (UNLABL)
+0.00000           WD3CIS(2) #Initial value of the dead coarse root C pool for trees/shrubs (LABELD)
+*** Mineral initial parameters
+1.61651           MINERL(1,1) #Mineral N in soil layer 1 
+0.62154           MINERL(2,1) #Mineral N in soil layer 2 
+0.27188           MINERL(3,1) #Mineral N in soil layer 3 
+0.166129          MINERL(4,1) #Mineral N in soil layer 4 
+0.121991          MINERL(5,1) #Mineral N in soil layer 5 
+0.050942          MINERL(6,1) #Mineral N in soil layer 6 
+0.00148312        MINERL(7,1) #Mineral N in soil layer 7 
+0.0               MINERL(8,1) #Mineral N in soil layer 8 
+0.0               MINERL(9,1) #Mineral N in soil layer 9 
+0.0               MINERL(10,1 #Mineral N in soil layer 10
+0.5               MINERL(1,2) #Mineral P in soil layer 1 
+0.0               MINERL(2,2) #Mineral P in soil layer 2 
+0.0               MINERL(3,2) #Mineral P in soil layer 3 
+0.0               MINERL(4,2) #Mineral P in soil layer 4 
+0.0               MINERL(5,2) #Mineral P in soil layer 5 
+0.0               MINERL(6,2) #Mineral P in soil layer 6 
+0.0               MINERL(7,2) #Mineral P in soil layer 7 
+0.0               MINERL(8,2) #Mineral P in soil layer 8 
+0.0               MINERL(9,2) #Mineral P in soil layer 9 
+0.0               MINERL(10,2) #Mineral P in soil layer 10
+0.5               MINERL(1,3) #Mineral S in soil layer 1 
+0.0               MINERL(2,3) #Mineral S in soil layer 2 
+0.0               MINERL(3,3) #Mineral S in soil layer 3 
+0.0               MINERL(4,3) #Mineral S in soil layer 4 
+0.0               MINERL(5,3) #Mineral S in soil layer 5 
+0.0               MINERL(6,3) #Mineral S in soil layer 6 
+0.0               MINERL(7,3) #Mineral S in soil layer 7 
+0.0               MINERL(8,3) #Mineral S in soil layer 8 
+0.0               MINERL(9,3) #Mineral S in soil layer 9 
+0.0               MINERL(10,3) #Mineral S in soil layer 10
+0.0               PARENT(1) #Mineral N in parent material   
+50.               PARENT(2) #Mineral P in parent material   
+50.               PARENT(3) #Mineral S in parent material   
+0.0               SECNDY(1) #Secondary Mineral N   
+15.               SECNDY(2) #Secondary Mineral P   
+2.                SECNDY(3) #Secondary Mineral S   
+0.0               OCCLUD #P in occluded pool      
+*** Water initial parameters
+0.999231          RWCF(1)#Relative water content fraction for CENTURY soil layer 1     
+0.37155           RWCF(2)#Relative water content fraction for CENTURY soil layer 2     
+0.203994          RWCF(3)#Relative water content fraction for CENTURY soil layer 3     
+0.278161          RWCF(4)#Relative water content fraction for CENTURY soil layer 4     
+0.350082          RWCF(5)#Relative water content fraction for CENTURY soil layer 5     
+0.422255          RWCF(6)#Relative water content fraction for CENTURY soil layer 6     
+0.0               RWCF(7)#Relative water content fraction for CENTURY soil layer 7     
+0.0               RWCF(8)#Relative water content fraction for CENTURY soil layer 8     
+0.0               RWCF(9)#Relative water content fraction for CENTURY soil layer 9     
+0.0               RWCF(10)#Relative water content fraction for CENTURY soil layer 10    
+0.0               SNLQ #Initial amount of liquid water in snow        
+0.0               SNOW #Initial amount of snow (as snow water equivalents)    
+1.00000           SNWINS #snow effect on soil surface temp 0 = not insulating, 1 = insulating
